@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青海旅行记 | 西宁塔尔寺</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* 顶部返回按钮 */
+        .back-box {
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
+        }
+
+        /* 文章主卡片容器 */
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+
+        /* 文章头部标题区 */
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+
+        /* 正文样式 */
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        /* 加粗小标题 */
+        .article-body .subtitle {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #182848;
+            margin: 32px 0 16px;
+            text-indent: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .subtitle i {
+            color: #4b6cb7;
+        }
+        /* 开篇短句无首行缩进 */
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
+
+        /* 页脚版权 */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* 移动端适配 */
+        @media (max-width:768px) {
+            .article-card {
+                padding: 32px 22px;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 返回文章列表按钮 -->
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
+            </a>
+        </div>
+
+        <!-- 游记主体卡片 -->
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-mountain"></i> 西宁塔尔寺</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>旅行分享</span>
+                    <span><i class="fas fa-calendar"></i>旅途随笔</span>
+                </div>
+            </div>
+
+            <div class="article-body">
+                <p class="short-start">上青原。</p>
+                <p class="short-start">四时，出发机场，天亮，入舱。</p>
+                <p class="short-start">上云霄，九时，西宁至，得哈达。</p>
+
+                <p class="subtitle"><i class="fas fa-thermometer-half"></i>此地有三度</p>
+                <p>高度，越过我国地一二级交界线，穿过祁连山与横断山的间隙，现河湟谷地；湟水河，黄河支流，全青海省最适宜居住的地区，海拔2300米。</p>
+                <p>温度，根据海拔每升高1000米，气温下降6摄氏度的关系，西宁成为中国夏都，属于高原山地气候或温带大陆性气候（根据百度：大陆性高原半干旱气候），冬冷夏凉，降水稀少，曾听闻七月昆仑山（还是祁连山）飞雪，又见当地居民“二八月，乱穿衣”。晚间冷风，知西北之风凛冽也。</p>
+                <p>湿度，导游讲解到，西宁地区湿度为0%，悚然，半日内，口干唇裂，独饮可克之。</p>
+
+                <p class="subtitle"><i class="fas fa-torii-gate"></i>塔尔寺游览见闻</p>
+                <p>午后，入塔尔寺赏玩。此地贵为藏传佛教圣地，第二圣人宗喀巴大师曾诞于此，大金瓦殿，金碧辉煌，其殿中金塔由纯金打造，价值十亿人民币。</p>
+                <p>此地文化多样。不必说藏传佛教，在这里，汉、藏、蒙、撒拉、土、回、东乡族世居，伊斯兰清真穆斯林、藏传佛教、道教交错。夜市间，号帽、盖头、彩虹袖来来往往，相处融洽。</p>
+
+                <p class="subtitle"><i class="fas fa-sun"></i>高原昼夜与日照</p>
+                <p>高原多紫外线辐射，青海地区，日照亦长，一行人浑身包裹，倘若穆斯林。用过晚餐，夜市时分，古戌时六刻，天色渐暗，寒风即可凛冽，单衣不可庇也。</p>
+            </div>
+        </div>
+
+        <!-- 底部版权 -->
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年08月09日</p>
+        </footer>
+    </div>
+</body>
+</html>
