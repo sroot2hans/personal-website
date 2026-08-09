@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站建设中</title>
+    <title>个人主页 | 建设中</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -25,7 +25,7 @@
         }
         
         .container {
-            max-width: 800px;
+            max-width: 850px;
             width: 100%;
             text-align: center;
             padding: 40px;
@@ -77,14 +77,33 @@
         .sub-message {
             font-size: 1.4rem;
             color: #666;
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto 40px;
             line-height: 1.6;
+        }
+
+        .intro-box {
+            background: rgba(75, 108, 183, 0.08);
+            border-radius: 14px;
+            padding: 24px;
+            margin: 0 auto 40px;
+            max-width: 700px;
+        }
+        .intro-title {
+            font-size: 1.3rem;
+            color: #182848;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
         }
         
         .progress-container {
             width: 100%;
-            max-width: 500px;
+            max-width: 550px;
             margin: 0 auto 50px;
             text-align: left;
         }
@@ -118,13 +137,17 @@
             100% { width: 80%; }
         }
         
-        /* 按钮样式 */
-        .button-container {
+        /* 按钮组样式 */
+        .button-group {
             margin: 30px auto;
-            max-width: 500px;
+            max-width: 520px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
         }
         
-        .external-link-btn {
+        .main-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -139,24 +162,32 @@
             text-decoration: none;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(75, 108, 183, 0.4);
-            width: 100%;
-            max-width: 350px;
+            flex: 1;
+            min-width: 220px;
+            max-width: 320px;
         }
         
-        .external-link-btn:hover {
-            transform: translateY(-3px);
+        .main-btn:hover {
+            transform: translateY(-3px) scale(1.02);
             box-shadow: 0 8px 20px rgba(75, 108, 183, 0.6);
             background: linear-gradient(135deg, #5a7bc9 0%, #213a70 100%);
         }
         
-        .external-link-btn:active {
+        .main-btn:active {
             transform: translateY(1px);
             box-shadow: 0 3px 10px rgba(75, 108, 183, 0.4);
         }
         
-        .external-link-btn i {
+        .main-btn i {
             margin-right: 10px;
             font-size: 1.4rem;
+        }
+
+        .universe-btn {
+            background: linear-gradient(135deg, #6c5ce7 0%, #2d3436 100%);
+        }
+        .universe-btn:hover {
+            background: linear-gradient(135deg, #81ecec 0%, #000000 100%);
         }
         
         .contact-info {
@@ -164,8 +195,12 @@
             color: #555;
             padding-top: 25px;
             border-top: 1px dashed #ccc;
+            margin-top: 20px;
         }
         
+        .contact-info p {
+            margin: 10px 0;
+        }
         .contact-info i {
             color: #4b6cb7;
             margin-right: 8px;
@@ -176,6 +211,11 @@
             color: #777;
             font-size: 1rem;
             text-align: center;
+        }
+        .modify-time {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #888;
         }
         
         /* 响应式设计 */
@@ -195,10 +235,13 @@
             .sub-message {
                 font-size: 1.2rem;
             }
-            
-            .external-link-btn {
-                padding: 14px 28px;
-                font-size: 1.1rem;
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .main-btn {
+                width: 100%;
+                max-width: 350px;
             }
         }
         
@@ -219,7 +262,7 @@
                 font-size: 1rem;
             }
             
-            .external-link-btn {
+            .main-btn {
                 padding: 12px 24px;
                 font-size: 1rem;
                 max-width: 280px;
@@ -230,18 +273,24 @@
 <body>
     <div class="container">
         <div class="construction-icon">
-            <i class="fas fa-tools"></i>
+            <i class="fas fa-code"></i>
         </div>
         
-        <h1 class="message">这里暂未建设完成，敬请期待</h1>
+        <h1 class="message">个人主页正在搭建，敬请期待</h1>
         
         <div class="divider"></div>
         
-        <p class="sub-message">本人正在努力于学业，暂无时间整日投身于个人网站建设，感谢您的耐心等待！</p>
+        <p class="sub-message">兼顾学业与创作，站点持续优化完善中，文章、随笔、项目记录会陆续上线，感谢耐心等候！</p>
+
+        <!-- 个人简介模块 -->
+        <div class="intro-box">
+            <h3 class="intro-title"><i class="fas fa-user-circle"></i> 关于我</h3>
+            <p class="intro-text">热爱编程、文字创作与脑洞幻想，会在这里记录学习笔记、生活随笔、原创短文与开发项目；打造专属的「大欣宇宙」幻想世界观，分享故事与设定。</p>
+        </div>
         
         <div class="progress-container">
             <div class="progress-label">
-                <span>网站建设进度</span>
+                <span>站点建设进度</span>
                 <span>75%</span>
             </div>
             <div class="progress-bar">
@@ -249,34 +298,38 @@
             </div>
         </div>
         
-        <!-- 这里添加了按钮 -->
-        <div class="button-container">
-            <a href="https://xinchen-gh2.com" class="external-link-btn" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-                访问√2工作室官网
+        <!-- 按钮组：文章入口 + 大欣宇宙 -->
+        <div class="button-group">
+            <a href="https://hans.xinchen-gh2.com/word" class="main-btn" target="_blank">
+                <i class="fas fa-book-open"></i>
+                文章随笔入口
+            </a>
+            <a href="https://dxu.xinchen-gh2.com" class="main-btn universe-btn" target="_blank">
+                <i class="fas fa-globe-asia"></i>
+                通往「大欣宇宙」
             </a>
         </div>
         
         <div class="contact-info">
-            <p><i class="fas fa-clock"></i>预计上线时间：2026年7月</p>
             <p><i class="fas fa-envelope"></i>联系邮箱：2584013851@qq.com</p>
+            <p><i class="fas fa-link"></i>工作室站点：<a href="https://xinchen-gh2.com" style="color:#4b6cb7;text-decoration:none;">√2工作室官网</a></p>
         </div>
     </div>
     
     <div class="footer">
         <p>© 2026 √2工作室/Hans 版权所有</p>
+        <p class="modify-time">页面最后修改时间：2026年08月09日</p>
     </div>
 
     <script>
-        // 简单的动态效果
+        // 页面加载动画逻辑
         document.addEventListener('DOMContentLoaded', function() {
             const message = document.querySelector('.message');
             const originalText = message.textContent;
             
-            // 添加打字机效果
+            // 打字机标题效果
             let charIndex = 0;
             message.textContent = '';
-            
             function typeWriter() {
                 if (charIndex < originalText.length) {
                     message.textContent += originalText.charAt(charIndex);
@@ -284,15 +337,12 @@
                     setTimeout(typeWriter, 80);
                 }
             }
-            
-            // 延迟开始打字效果
             setTimeout(typeWriter, 500);
             
-            // 进度条数字动画
+            // 进度数字滚动动画
             const progressPercent = document.querySelector('.progress-label span:last-child');
             let percent = 0;
             const targetPercent = 75;
-            
             const progressInterval = setInterval(() => {
                 if (percent < targetPercent) {
                     percent += 1;
@@ -302,17 +352,16 @@
                 }
             }, 30);
             
-            // 按钮悬停效果增强
-            const button = document.querySelector('.external-link-btn');
-            if (button) {
-                button.addEventListener('mouseenter', function() {
+            // 所有按钮hover增强缩放动画
+            const allBtns = document.querySelectorAll('.main-btn');
+            allBtns.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-3px) scale(1.02)';
                 });
-                
-                button.addEventListener('mouseleave', function() {
+                btn.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateY(0) scale(1)';
                 });
-            }
+            });
         });
     </script>
 </body>
