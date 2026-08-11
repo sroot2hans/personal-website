@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祁连山大草原游记</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .back-box {
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
+        }
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        @media (max-width:768px) {
+            .article-card {
+                padding: 32px 22px;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
+            </a>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-seedling"></i> 卓尔山与祁连山大草原</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>旅行分享</span>
+                    <span><i class="fas fa-landmark"></i>民俗历史</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <p>睁开双眼，迎接的是祁连山角的暖风。祁连县城不大，确有家乡小县城的风味。一个不小不大的广场，几条热热闹闹的街道，在众山环抱之中，一切岁月静好。造访卓尔山，青稞、油菜花相伴，阵阵微风，已然到达山顶的西夏烽火台。典型的样貌，搭配着一些些历史知识。此处，正是西夏末代皇帝为躲避北宋军队的进攻而修建的防御设施。登顶，祁连县城一览无余，远望便是阿咪东索（牛心山），藏人的神山。</p>
+                <p>祁连有八宝：金、银、铜、铁、麝香、鹿茸、大黄、黄蘑菇‌，同时，阿咪东索山上，山坡的土层之下，是冬虫夏草的驻扎地。导游告诉我们，小时的青海是有“虫草假”的，学生会跟着家长前往山上寻找冬虫夏草，常常在山上，一呆就是一个月。听着可能幸福，但几千米的海拔，气温低，风大，一旦感冒生病，极易造成肺气肿。可见，极大的利润之下，是一个个勇夫的前行。</p>
+                <p>祁连，连接了青海与甘肃，从县城出发，可直达张掖，海拔低于3000米，是个宜人的地方。曾了解到，1937年，中国红军西路军曾在此歼灭西北马家军两万余人。这里有山林，梯田，荒山，亦有祁连山大草原。</p>
+                <p>下车入原，一望无际的是连绵的青。这里动物横行，有小羊在吃了我给的草一口便扭头离开，也有黑色的骏马策马奔腾。地洞随处可见，鼠兔在其中窜进窜出，更有牦牛低头吃草，与世无争。</p>
+                <p>在这里，我们体验了青藏高原的风情，也成为了区域融合发展的样本，也成为地大物博的祖国的天然气压计，感叹全球变暖而消失的群山雪顶。遗憾、赞美、自豪着，非同凡响的大美青海。</p>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年08月09日</p>
+        </footer>
+    </div>
+</body>
+</html>
