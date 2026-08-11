@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柴达木盆地上的随笔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .back-box {
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
+        }
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        @media (max-width:768px) {
+            .article-card {
+                padding: 32px 22px;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
+            </a>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-mountain"></i>柴达木的故事</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>旅行分享</span>
+                    <span><i class="fas fa-book"></i>人文记录</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <p class="short-start">这里的朝阳比较懒惰，早晨6点半，懒洋洋地，打着哈欠宣告一天的开始。</p>
+                <p>一缕阳光重新唤醒柴达木的生机。德令哈，中国诗城，透过牧草的年轮，看到海子沐浴在阳光下，向着拉萨前行。牧草告诉朝霞，告诉所有生命，关于柴达木的故事。</p>
+                <p>一条德小高速在群山中徐徐向西，与西部的企图不期而遇。牧草不会忘记，一个叫索南达杰的名字，还有可可西里的控诉。上个世纪八九十年代，可可西里的藏羚羊皮出现在欧洲的贵族家庭，无人区内，盗猎分子横行。索南达杰等藏族同胞，世世代代与高原的生灵相依为伴。索南达杰成为了该地保护藏羚羊的先锋。牧草说到，在1994年1月18日，索南达杰在押送歹徒时，遭到歹徒袭击，英勇牺牲，临死时还保留着指向歹徒离去的方向。这是柴达木，可可西里的印记，如今，在骆驼草的周边，藏羚羊的数量已经达到十几万只，而可可西里，又成为热闹的无人区。</p>
+                <p>朝霞继续前行，德令哈说，我也有自己的故事。著名诗人海子曾游历于此，遇到了一位姐姐，于是在此留下了《今夜我在德令哈》。著名歌手刀郎也留下了《德令哈一夜》。位于柴达木盆地的交通枢纽，四通八达。</p>
+                <p>绵延不断，出德令哈，绿色渐渐消逝，沙化、戈壁摊开一幅广阔图景。可鲁克湖和托素湖依偎一起，在这里，柴达木也有自己的记忆。传说可鲁克和托素是一对恋人，然而部落首领阻挠，强迫托素前往遥远的盐湖取盐，托素因遥远的路途干渴无水，渴死于柴达木腹地。可鲁克得知此事，前往寻找尸首，并殉情于此，两人化作两湖，同样，可鲁克湖是淡水湖，托素湖是咸水湖，正是由于托素背着两三袋盐。</p>
+                <p>牧草记得的，是遥远的传说和历史，而柴达木，不仅仅是过去的结晶，亦是当代的明珠。</p>
+                <p>出德令哈市，远远便看到青海的熔盐塔式光热电站，通过定日镜，可将大量的光线集中于塔顶熔盐，实现24小时发电。一路向西，行至翡翠湖，该景点于2018年打造，原先是大量的工业盐湖，蓝、黄、红、绿，各色混合，宛若碎裂的翡翠。远处，还有如今的火箭军基地，外国人禁止进入。</p>
+                <p>该地位于大柴旦镇，道路碎裂，招牌倒塌。后来得知，此地在6月时经历了里氏6.1级地震，现在，仍有救援物资在帐篷中，整齐的等待可能的余震。</p>
+                <p>从古老的吐谷浑王朝，到如今的青海海西，和平与美好种植在年年的岁月中，尽管气候寒冷干燥，服饰、语言、习俗各异，但在可爱的柴达木中，我们都是一家人，共盼旭日东升，共赏夕阳西下。</p>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年08月09日</p>
+        </footer>
+    </div>
+</body>
+</html>
