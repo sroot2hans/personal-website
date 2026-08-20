@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章随笔 | Hans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* 头部标题区域 */
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .page-header h1 {
+            font-size: 2.6rem;
+            color: #182848;
+            margin-bottom: 16px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 20px;
+        }
+        .page-desc {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 文章卡片网格布局 2行2列 */
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        /* 单篇文章方块卡片 */
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 18px;
+            padding: 35px 28px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            border-top: 5px solid #4b6cb7;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(75, 108, 183, 0.22);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: #4b6cb7;
+            margin-bottom: 22px;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            color: #182848;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+        .card-text {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.65;
+            margin-bottom: 20px;
+        }
+        .card-tag {
+            display: inline-block;
+            padding: 5px 14px;
+            background: rgba(75,108,183,0.12);
+            color: #4b6cb7;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* 返回首页按钮 */
+        .back-box {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 0 6px 16px rgba(75, 108, 183, 0.35);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(75, 108, 183, 0.45);
+        }
+
+        /* 底部版权 */
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* 移动端适配 单列显示 */
+        @media (max-width:768px) {
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+            .page-header h1 {
+                font-size: 2.1rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-card {
+                padding: 26px 20px;
+            }
+            .card-icon {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 页面头部 -->
+        <div class="page-header">
+            <h1><i class="fas fa-book-open"></i> 九年之途</h1>
+            <div class="divider"></div>
+            <p class="page-desc">记录青海旅行的点点滴滴，点击卡片阅读对应文章</p>
+        </div>
+
+        <!-- 6个文章方块卡片 -->
+        <div class="article-grid">
+            <!-- 文章1 卡片，href自行替换域名 -->
+            <a href="https://hans.xinchen-gh2.com/word/nineyears/cars" class="article-card" target="_blank">
+                <div class="card-icon"><i class="fas fa-pen-fancy"></i></div>
+                <h3 class="card-title">车上随笔</h3>
+                <p class="card-text">来来往往的感动中引发的深思。</p>
+                <span class="card-tag">感悟</span>
+            </a>
+
+        </div>
+
+        <!-- 返回建设中首页按钮 -->
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回个人主页
+            </a>
+        </div>
+
+        <!-- 页脚 -->
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年08月20日</p>
+        </footer>
+    </div>
+</body>
+</html>
