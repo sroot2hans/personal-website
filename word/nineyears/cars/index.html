@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车上随笔</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .back-box {
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
+        }
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        @media (max-width:768px) {
+            .article-card {
+                padding: 32px 22px;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
+            </a>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-gem"></i> 车上随笔</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>感悟</span>
+                    <!--<span><i class="fas fa-mountain-sun"></i>盐湖纪实</span>-->
+                </div>
+            </div>
+            <div class="article-body">
+                <p>又是在上课的路上，急刹急停，人来人往……拥堵路上听着《苦瓜》……</p>
+                <p>兴许已经语无伦次，停滞的车流、奔涌的车流，并不是说我同行的人一定会相伴，兴许在某个路口，我们都会分开。终究还是陌路人……罢了……</p>
+                <p>“真想不到当初我们也讨厌吃苦瓜……”一曲响起，一丝丝破碎的回忆，在深处阴暗想起。寒暑假的光阴吞噬在一次次的行程里。我们的纯真，我们的自由，一次一次变得僵硬……</p>
+                <p>在车上的时光，美好的总是在那个无忧无虑的日子里。每次所谓“走读杭州”活动，hdz和xt，总是在问我是否同座被拒绝后，说那么几句“重色轻友”。也忽然想起和hdz、和xt，其实都在一同坐过——都是四年级的事罢。那时总有些欢声笑语，可是到了现在，望望身旁，空无一人，只有永恒不变的我，和纷纷嚷嚷的世界……</p>
+                <p>还是在车上，一件一件趣事都消失干净，最后只留下照片，标记忘却……路边的广告牌，似乎一成不变，他就存在着，在宁静中消逝，也不会有人在意，有人知晓。回到繁华，再听听铃声，是熟悉，又陌生……路上纷纷嚷嚷，何处心如死灰？</p>
+                <p>在地铁，也是车罢，或许嘈杂，依稀可辨，无人在意。</p>
+                <p>此篇，未完，未有写完之日，此致，停笔。</p>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年08月20日</p>
+        </footer>
+    </div>
+</body>
+</html>
