@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文章随笔 | Hans</title>
+    <title>平白哀悼</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -12,124 +12,102 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
         }
-
         body {
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             padding: 40px 20px;
             color: #333;
         }
-
         .wrap {
-            max-width: 1100px;
+            max-width: 860px;
             margin: 0 auto;
         }
-
-        /* 头部标题区域 */
-        .page-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .page-header h1 {
-            font-size: 2.6rem;
-            color: #182848;
-            margin-bottom: 16px;
-        }
-        .divider {
-            width: 140px;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
-            margin: 0 auto 20px;
-        }
-        .page-desc {
-            font-size: 1.2rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* 文章卡片网格布局 2行2列 */
-        .article-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        /* 单篇文章方块卡片 */
-        .article-card {
-            background: rgba(255,255,255,0.92);
-            border-radius: 18px;
-            padding: 35px 28px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-            border-top: 5px solid #4b6cb7;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .article-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 40px rgba(75, 108, 183, 0.22);
-        }
-
-        .card-icon {
-            font-size: 3rem;
-            color: #4b6cb7;
-            margin-bottom: 22px;
-        }
-        .card-title {
-            font-size: 1.5rem;
-            color: #182848;
-            font-weight: 600;
-            margin-bottom: 14px;
-        }
-        .card-text {
-            font-size: 1.05rem;
-            color: #555;
-            line-height: 1.65;
-            margin-bottom: 20px;
-        }
-        .card-tag {
-            display: inline-block;
-            padding: 5px 14px;
-            background: rgba(75,108,183,0.12);
-            color: #4b6cb7;
-            border-radius: 30px;
-            font-size: 0.9rem;
-        }
-
-        /* 返回首页按钮 */
         .back-box {
-            text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .back-btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 14px 30px;
+            padding: 12px 26px;
             background: linear-gradient(135deg, #4b6cb7, #182848);
             color: #fff;
             text-decoration: none;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500;
-            box-shadow: 0 6px 16px rgba(75, 108, 183, 0.35);
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
             transition: all 0.3s;
         }
         .back-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 24px rgba(75, 108, 183, 0.45);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
         }
-
-        /* 底部版权 */
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
         footer {
             text-align: center;
             color: #777;
             font-size: 0.98rem;
-            padding-top: 20px;
+            padding-top: 30px;
+            margin-top: 40px;
             border-top: 1px dashed #ccc;
         }
         .modify-time {
@@ -137,66 +115,56 @@
             font-size: 0.9rem;
             color: #888;
         }
-
-        /* 移动端适配 单列显示 */
         @media (max-width:768px) {
-            .article-grid {
-                grid-template-columns: 1fr;
+            .article-card {
+                padding: 32px 22px;
             }
-            .page-header h1 {
-                font-size: 2.1rem;
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
             }
         }
         @media (max-width:480px) {
-            .article-card {
-                padding: 26px 20px;
+            .article-header h1 {
+                font-size: 1.7rem;
             }
-            .card-icon {
-                font-size: 2.4rem;
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
             }
         }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <!-- 页面头部 -->
-        <div class="page-header">
-            <h1><i class="fas fa-book-open"></i> 九年之途</h1>
-            <div class="divider"></div>
-            <p class="page-desc">记录小学到初中的九年感悟。</p>
-        </div>
-
-        <!-- 6个文章方块卡片 -->
-        <div class="article-grid">
-            <!-- 文章1 卡片，href自行替换域名 -->
-            <a href="https://hans.xinchen-gh2.com/word/nineyears/cars" class="article-card" target="_blank">
-                <div class="card-icon"><i class="fas fa-pen-fancy"></i></div>
-                <h3 class="card-title">车上随笔</h3>
-                <p class="card-text">来来往往的感动中引发的深思。</p>
-                <span class="card-tag">感悟</span>
-            </a>
-
-            <!-- 文章2 卡片，href自行替换域名 -->
-            <a href="https://hans.xinchen-gh2.com/word/nineyears/mourn" class="article-card" target="_blank">
-                <div class="card-icon"><i class="fas fa-pen-fancy"></i></div>
-                <h3 class="card-title">平白哀悼</h3>
-                <p class="card-text">略......</p>
-                <span class="card-tag">感悟</span>
-            </a>
-
-        </div>
-
-        <!-- 返回建设中首页按钮 -->
         <div class="back-box">
-            <a href="https://hans.xinchen-gh2.com" class="back-btn">
-                <i class="fas fa-arrow-left"></i> 返回个人主页
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
             </a>
         </div>
-
-        <!-- 页脚 -->
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-gem"></i> 平白哀悼</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>感悟</span>
+                    <!--<span><i class="fas fa-mountain-sun"></i>盐湖纪实</span>-->
+                </div>
+            </div>
+            <div class="article-body">
+                <p>行驶光天化日，可能见过流星裂空，又或是诗和远方。世界一片美好，万物皆舞。</p>
+                <p>梦醒，世界破败不堪。战争、环境、灾难，3D环绕。也许有人言，这些远在天边，可我们能见到那些人、事，早就是幸存下来的产物。见过影像，八月二十六日行驶在216国道上的轿车紧急倒车，下方便是摧毁国门的泥石流。只是不是我们，有人，一去不复返。放眼大气层下，多多少少平凡之人，仗着自己平凡身份，漫无目的地成为历史上的底页。平凡不是你我的挡箭牌。</p>
+                <p>话说，家事国事天下事，事事关心，不要以为一场外交会议，只是身居高位的人的工作，他和明日油价、一日三餐一样重要。时代洪流，就是一场永不停歇的泥石流，没人在此幸存。</p>
+                <p>身居校园，缠身于三餐和琐碎扣分之中，何其悲哀。要拘泥于腐朽制度，不知，是否又一个充满理想的人，败在现实，又成为他人的向下引力？</p>
+                <p>不论何时，要有一颗哀悼之心，你之所以成为你，正是因为我们的不同。千篇一律，只能带来灭绝。抬头看天，不论白黑，一定有处地方，不论遥远，正上演满天繁星，万物复苏。</p>
+                <p>只要关注，广袤宇宙的某个地方，想要的一切正在上演。人当然要现实，偶尔也需要虚幻。</p>
+            </div>
+        </div>
         <footer>
             <p>© 2026 √2工作室/Hans 版权所有</p>
-            <p class="modify-time">页面最后修改时间：2026年08月20日</p>
+            <p class="modify-time">页面最后修改时间：2026年09月25日</p>
         </footer>
     </div>
 </body>
