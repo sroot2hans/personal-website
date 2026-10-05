@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>从霞浦到矾山</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .back-box {
+            margin-bottom: 30px;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 26px;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 5px 14px rgba(75, 108, 183, 0.3);
+            transition: all 0.3s;
+        }
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(75, 108, 183, 0.42);
+        }
+        .article-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            padding: 45px 40px;
+        }
+        .article-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4b6cb7, #182848);
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .article-header h1 {
+            font-size: 2.4rem;
+            color: #182848;
+            margin-bottom: 15px;
+        }
+        .divider {
+            width: 140px;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, #4b6cb7, transparent);
+            margin: 0 auto 18px;
+        }
+        .article-meta {
+            font-size: 1rem;
+            color: #666;
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-meta span i {
+            color: #4b6cb7;
+            margin-right: 6px;
+        }
+        .article-body {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+        }
+        .article-body p {
+            margin-bottom: 22px;
+            text-indent: 2em;
+        }
+        .article-body .short-start {
+            text-indent: 0;
+            font-size: 1.25rem;
+            color: #182848;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.98rem;
+            padding-top: 30px;
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+        }
+        .modify-time {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        @media (max-width:768px) {
+            .article-card {
+                padding: 32px 22px;
+            }
+            .article-header h1 {
+                font-size: 2rem;
+            }
+            .article-body {
+                font-size: 1.08rem;
+            }
+        }
+        @media (max-width:480px) {
+            .article-header h1 {
+                font-size: 1.7rem;
+            }
+            .article-meta {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="back-box">
+            <a href="https://hans.xinchen-gh2.com/word" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回文章随笔列表
+            </a>
+        </div>
+        <div class="article-card">
+            <div class="article-header">
+                <h1><i class="fas fa-seedling"></i> 从霞浦到矾山</h1>
+                <div class="divider"></div>
+                <div class="article-meta">
+                    <span><i class="fas fa-tag"></i>旅行分享</span>
+                    <span><i class="fas fa-landmark"></i>沿岸风光</span>
+                </div>
+            </div>
+            <div class="article-body">
+                <p>离开东壁，飞跃在福建沿海，不一会就到达了北岐滩涂。依旧，涨潮时分，半点滩涂都不见。行至一旁的山间，望海，草草结束。午后，到达大金沙滩，车多，人还好。转眼间，又开始最原始的玩乐，我将把这份来之不易的“沙盘”，深深镌刻在小说的某个角落。</p>
+                <p>晚间，回到霞浦县城，这里，与其它地方的县城并无两样。一切都是这样的。</p>
+                <p>第二天，回到浙江，霞关老街。这里是浙江最南端，一旁便是蔚蓝的大海。老城，攀附于山，旧物换新颜。一切愿新生。继续北上，矾山又是一番景象。在这里，全球一半多的明矾从这里出发，是世界矾都，一条一条交错相通的矿道，如今都迎来了新生。多年前的工业遗产，至今仍然焕发生机。</p>
+                <p>几件小事，草草收尾，静待下回。</p>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 √2工作室/Hans 版权所有</p>
+            <p class="modify-time">页面最后修改时间：2026年10月05日</p>
+        </footer>
+    </div>
+</body>
+</html>
